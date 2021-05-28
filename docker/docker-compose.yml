@@ -1,6 +1,23 @@
 version: "3.7"
 
 services:
+    nginx:
+        container_name: nginx
+        build:
+            context: ./nginx
+            dockerfile: Dockerfile
+        expose:
+            - "80"
+            - "443"
+        ports:
+            - "6000:80"
+            - "6001:443"
+        restart: unless-stopped
+        healthcheck:
+            test: ["CMD", "service", "nginx", "status"]
+            interval: 60s
+            timeout: 5s
+
     chibisafe:
         container_name: chibisafe
         build:

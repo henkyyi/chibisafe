@@ -11,7 +11,6 @@ services:
             - "443"
         ports:
             - "8080:80"
-            - "8081:443"
         restart: unless-stopped
         healthcheck:
             test: ["CMD", "service", "nginx", "status"]

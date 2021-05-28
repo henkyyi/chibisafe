@@ -1,22 +1,6 @@
 version: "3.7"
 
 services:
-    nginx:
-        container_name: nginx
-        build:
-            context: ./nginx
-            dockerfile: Dockerfile
-        expose:
-            - "80"
-            - "443"
-        ports:
-            - "8080:80"
-        restart: unless-stopped
-        healthcheck:
-            test: ["CMD", "service", "nginx", "status"]
-            interval: 60s
-            timeout: 5s
-
     chibisafe:
         container_name: chibisafe
         build:
@@ -45,7 +29,7 @@ services:
             META_TWITTER_HANDLE: ""
             SERVER_PORT: 5000
             WEBSITE_PORT: 5001
-            DOMAIN: "http://safe.afsa.se"
+            DOMAIN: "https://safe.afsa.se"
             SERVICE_NAME: chibisafe
             MAX_SIZE: 20000
             GENERATE_THUMBNAILS: "true"

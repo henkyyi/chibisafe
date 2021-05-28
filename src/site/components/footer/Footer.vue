@@ -2,15 +2,6 @@
 	<footer>
 		<div class="container">
 			<div class="columns">
-				<div class="column is-narrow">
-					<h4>chibisafe</h4>
-					<span>© 2017-{{ getYear }}
-						<a
-							href="https://github.com/pitu"
-							class="no-block">Pitu</a>
-					</span><br>
-					<span>v{{ version }}</span>
-				</div>
 				<div class="column is-narrow bottom-up">
 					<a
 						v-if="loggedIn"

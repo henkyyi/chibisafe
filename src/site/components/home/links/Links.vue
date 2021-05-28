@@ -54,7 +54,7 @@ export default {
 		margin: 7rem 0 3rem 0;
 		align-items: stretch;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 
 		div.link { cursor: pointer; }
 		.link {

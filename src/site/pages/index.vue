@@ -6,7 +6,7 @@
 		<div class="leftSpacer">
 			<div class="mainBlock">
 				<div>
-					<h4>Blazing fast file uploader. For real.</h4>
+					<h4>Borpa.</h4>
 					<p>
 						A <strong>modern</strong> and self-hosted file upload service that can handle anything you throw at it.
 					</p>
@@ -18,7 +18,7 @@
 					<div
 						v-else
 						class="has-text-right is-size-4">
-						This site has disabled public uploads. You need an account.
+						You need to log in to upload files.
 					</div>
 
 					<Links />

@@ -13,15 +13,6 @@
 				</p>
 			</header>
 		</div>
-		<a
-			href="https://chrome.google.com/webstore/detail/lolisafe-uploader/enkkmplljfjppcdaancckgilmgoiofnj"
-			target="_blank"
-			class="link">
-			<header class="bd-footer-star-header">
-				<h4 class="bd-footer-title">Extension</h4>
-				<p class="bd-footer-subtitle">Upload from any website</p>
-			</header>
-		</a>
 	</div>
 </template>
 <script>

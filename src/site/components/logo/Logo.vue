@@ -4,8 +4,8 @@
 <style lang="scss" scoped>
 	img {
 		height: 376px;
-		animation-delay: 0.5s;
-		animation-duration: 1.5s;
+		animation-delay: 0s;
+		animation-duration: 1s;
 		animation-fill-mode: both;
 		animation-name: floatUp;
 		animation-timing-function: cubic-bezier(0, 0.71, 0.29, 1);

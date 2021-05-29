@@ -42,8 +42,8 @@ services:
             GENERATED_ALBUM_LENGTH: 4
             PUBLIC_MODE: "false"
             USER_ACCOUNTS: "false"
-            ADMIN_ACCOUNT: ""
-            ADMIN_PASSWORD: ""
+            ADMIN_ACCOUNT: "admin"
+            ADMIN_PASSWORD: "admin"
             DB_CLIENT: "sqlite3"
             DB_HOST: ""
             DB_USER: ""

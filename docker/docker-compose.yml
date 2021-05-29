@@ -9,6 +9,8 @@ services:
         expose:
             - "5000"
             - "5001"
+        ports:
+            - "5000:5000"
         restart: unless-stopped
         hostname: chibisafe
         volumes:
@@ -21,7 +23,7 @@ services:
             RATE_LIMIT_MAX: 5
             BLOCKED_EXTENSIONS: ".jar,.exe,.msi,.com,.bat,.cmd,.scr,.ps1,.sh"
             UPLOAD_FOLDER: uploads
-            SECRET: "wowfcgMHqZHwOIMLadWrKu3liyqPOOILpDLSDvuxq3YGhJmiZXJCVpnF96l11WfR"
+            SECRET: ""
             MAX_LINKS_PER_ALBUM: 5
             META_THEME_COLOR: "#20222b"
             META_DESCRIPTION: "Blazing fast file uploader and bunker written in node! 🚀"
@@ -39,9 +41,9 @@ services:
             GENERATED_FILENAME_LENGTH: 6
             GENERATED_ALBUM_LENGTH: 4
             PUBLIC_MODE: "false"
-            USER_ACCOUNTS: "true"
-            ADMIN_ACCOUNT: "admin"
-            ADMIN_PASSWORD: "admin"
+            USER_ACCOUNTS: "false"
+            ADMIN_ACCOUNT: ""
+            ADMIN_PASSWORD: ""
             DB_CLIENT: "sqlite3"
             DB_HOST: ""
             DB_USER: ""

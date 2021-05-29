@@ -1,5 +1,5 @@
 <template>
-	<img src="~/assets/images/borpa.png">
+	<img src="~/assets/images/borpa.gif">
 </template>
 <style lang="scss" scoped>
 	img {

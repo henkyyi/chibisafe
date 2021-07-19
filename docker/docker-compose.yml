@@ -17,6 +17,7 @@ services:
             - /nas-storage/safe/storage:/usr/chibisafe/uploads
             - /nas-storage/safe/database:/usr/chibisafe/database
         environment:
+		    OVERWRITE_SETTINGS: "false"
             CHUNK_SIZE: 90
             ROUTE_PREFIX: /api
             RATE_LIMIT_WINDOW: 2
@@ -26,11 +27,10 @@ services:
             SECRET: "wowfcgMHqZHwOIMLadWrKu3liyqPOOILpDLSDvuxq3YGhJmiZXJCVpnF96l11WfR"
             MAX_LINKS_PER_ALBUM: 5
             META_THEME_COLOR: "#20222b"
-            META_DESCRIPTION: "Blazing fast file uploader and bunker written in node! 🚀"
+            META_DESCRIPTION: "Borpa"
             META_KEYWORDS: "chibisafe,upload,uploader,file,vue,images,ssr,file uploader,free"
             META_TWITTER_HANDLE: ""
             SERVER_PORT: 5000
-            WEBSITE_PORT: 5001
             DOMAIN: "https://safe.afsa.se"
             SERVICE_NAME: Borpa
             MAX_SIZE: 20000
@@ -38,7 +38,7 @@ services:
             GENERATE_ZIPS: "true"
             STRIP_EXIF: "true"
             SERVE_WITH_NODE: "true"
-            GENERATED_FILENAME_LENGTH: 6
+            GENERATED_FILENAME_LENGTH: 4
             GENERATED_ALBUM_LENGTH: 4
             PUBLIC_MODE: "false"
             USER_ACCOUNTS: "false"

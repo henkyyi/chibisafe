@@ -1,3 +1,8 @@
+### Disclaimer
+This is a fork of Chibisafe with modifications intended for private use. If you wish to install Chibisafe on your own server, please head over to the [main repository](https://github.com/WeebDev/chibisafe).
+
+---
+
 <p align="center">
   <img width="234" height="376" src="https://lolisafe.moe/xjoghu.png">
 </p>

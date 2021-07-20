@@ -6,11 +6,8 @@ services:
         build:
             context: ../
             dockerfile: ./docker/chibisafe/Dockerfile
-        expose:
-            - "5000"
-            - "5001"
         ports:
-            - "5000:5000"
+            - "127.0.0.1:5000:5000"
         restart: unless-stopped
         hostname: chibisafe
         volumes:

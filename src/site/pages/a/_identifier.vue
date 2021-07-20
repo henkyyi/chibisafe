@@ -16,46 +16,29 @@
 				</div>
 			</div>
 			<div class="container">
-				<template v-if="!isNsfw || (isNsfw && nsfwConsent)">
-					<Grid
-						v-if="files && files.length"
-						:files="files"
-						:is-public="true"
-						:width="200"
-						:enable-search="false"
-						:enable-toolbar="false">
-						<template v-slot:pagination>
-							<b-pagination
-								:total="totalFiles"
-								:per-page="limit"
-								:current.sync="current"
-								range-before="2"
-								range-after="2"
-								class="pagination-slot"
-								icon-prev="icon-interface-arrow-left"
-								icon-next="icon-interface-arrow-right"
-								icon-pack="icon"
-								aria-next-label="Next page"
-								aria-previous-label="Previous page"
-								aria-page-label="Page"
-								aria-current-label="Current page" />
-						</template>
+				<Grid
+					v-if="files && files.length"
+					:files="files"
+					:is-public="true"
+					:width="200"
+					:enable-search="false"
+					:enable-toolbar="false">
+					<template v-slot:pagination>
+						<b-pagination
+							:total="totalFiles"
+							:per-page="limit"
+							:current.sync="current"
+							range-before="2"
+							range-after="2"
+							class="pagination-slot"
+							icon-prev="icon-interface-arrow-left"
+							icon-next="icon-interface-arrow-right"
+							icon-pack="icon"
+							aria-next-label="Next page"
+							aria-previous-label="Previous page"
+							aria-page-label="Page"
+							aria-current-label="Current page" />
 					</Grid>
-				</template>
-				<template v-else>
-					<div class="nsfw">
-						<i class="mdi mdi-alert mdi-48px" />
-						<h1>NSFW Content</h1>
-						<p>
-							This album contains images or videos that are not safe for work or are inappropriate to view in some situations.<br>
-							Do you wish to proceed?
-						</p>
-						<button
-							class="button is-danger"
-							@click="nsfwConsent = true">
-							Show me the content
-						</button>
-					</div>
 				</template>
 			</div>
 		</template>

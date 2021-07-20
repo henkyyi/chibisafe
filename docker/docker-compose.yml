@@ -20,9 +20,7 @@ services:
             RATE_LIMIT_WINDOW: 2
             RATE_LIMIT_MAX: 5
             BLOCKED_EXTENSIONS: ".jar,.exe,.msi,.com,.bat,.cmd,.scr,.ps1,.sh"
-            UPLOAD_FOLDER: uploads
-            SECRET: "wowfcgMHqZHwOIMLadWrKu3liyqPOOILpDLSDvuxq3YGhJmiZXJCVpnF96l11WfR"
-            MAX_LINKS_PER_ALBUM: 5
+            SECRET: ""
             META_THEME_COLOR: "#20222b"
             META_DESCRIPTION: "Borpa"
             META_KEYWORDS: "chibisafe,upload,uploader,file,vue,images,ssr,file uploader,free"

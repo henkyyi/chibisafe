@@ -11,7 +11,7 @@
 				label="Link"
 				centered>
 				<a
-					:href="`${config.URL}/a/${props.row.identifier}`"
+					:href="`https://uwu.nu/a/${props.row.identifier}`"
 					target="_blank">
 					{{ props.row.identifier }}
 				</a>

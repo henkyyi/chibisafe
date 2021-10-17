@@ -28,17 +28,17 @@ services:
             SERVER_PORT: 5000
             DOMAIN: "https://uwu.nu"
             SERVICE_NAME: Borpa
-            MAX_SIZE: 20000
+            MAX_SIZE: 30000
             GENERATE_THUMBNAILS: "true"
             GENERATE_ZIPS: "true"
             STRIP_EXIF: "true"
             SERVE_WITH_NODE: "true"
-            GENERATED_FILENAME_LENGTH: 4
+            GENERATED_FILENAME_LENGTH: 6
             GENERATED_ALBUM_LENGTH: 4
             PUBLIC_MODE: "false"
             USER_ACCOUNTS: "false"
-            ADMIN_ACCOUNT: "admin"
-            ADMIN_PASSWORD: "admin"
+            ADMIN_ACCOUNT: ""
+            ADMIN_PASSWORD: ""
             DB_CLIENT: "sqlite3"
             DB_HOST: ""
             DB_USER: ""
